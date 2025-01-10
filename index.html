@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danixsoft - Software Development & Exam Question Setting</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* White background for the body */
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #00bcd4, #ff5722); /* Cyan background */
+      color: white;
+      padding: 40px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+      font-family: 'Arial', sans-serif;
+    }
+
+    p {
+      font-size: 1.2em;
+      font-weight: 400;
+      font-family: 'Arial', sans-serif;
+      margin-bottom: 1.5em;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: white;
+      margin: 0 20px;
+      font-size: 20px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .nav-link:hover {
+      color: #ffcc00;
+      transform: scale(1.1);
+    }
+
+    .marquee {
+      background-color: #ff5722;
+      padding: 10px 0;
+      font-size: 18px;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0078d7;
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    p, ul {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    ul li::before {
+      content: '✔';
+      color: #0078d7;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #0078d7;
+      color: white;
+      font-size: 14px;
+      position: relative;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-links a {
+      text-decoration: none;
+      color: #0078d7;
+      margin-right: 20px;
+      font-weight: 700;
+      transition: color 0.3s ease;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .contact-links a:hover {
+      color: #ffcc00;
+    }
+
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      display: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .scroll-top-btn:hover {
+      background-color: #005bb5;
+      transform: scale(1.1);
+    }
+
+    .services-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .service-card {
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      width: 30%;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-card h3 {
+      color: #0078d7;
+      font-weight: 700;
+    }
+
+    .service-card p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav a {
+        font-size: 18px;
+        margin: 0 10px;
+      }
+      .services-list {
+        flex-direction: column;
+        align-items: center;
+      }
+      .service-card {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Danixsoft</h1>
+    <p>Your partner in Software Development & Exam Question Setting</p>
+    <nav>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Marquee Section -->
+  <div class="marquee">
+    <marquee behavior="scroll" direction="left">
+      <span>We offer high-quality custom software, apps, websites, and reliable exam question setting! Contact us now to get started!</span>
+    </marquee>
+  </div>
+
+  <div class="container" id="about">
+    <h2>About Us</h2>
+    <p>At Danixsoft, we specialize in delivering innovative software solutions, ranging from custom software applications to exam question setting. Our team is passionate about creating products that help businesses and educational institutions succeed and thrive.</p>
+  </div>
+
+  <div class="container" id="services">
+    <h2>Our Services</h2>
+    <div class="services-list">
+      <div class="service-card">
+        <h3>App Development</h3>
+        <p>We design and develop high-performance mobile applications for Android and iOS, tailored to meet your business needs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Software Development</h3>
+        <p>We create custom software solutions that are scalable, secure, and efficient, helping automate your business processes.</p>
+      </div>
+      <div class="service-card">
+        <h3>Website Development</h3>
+        <p>Our team builds responsive and visually appealing websites that are optimized for speed, performance, and user engagement.</p>
+      </div>
+      <div class="service-card">
+        <h3>Exam Question Setting</h3>
+        <p>We provide precise and reliable exam question setting for educational institutions. Our questions are designed to assess knowledge accurately.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> <a href="mailto:danixsoft04@gmail.com">danixsoft04@gmail.com</a></p>
+    <p><strong>Phone:</strong> +233 596742877</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/233596742877" target="_blank">Chat with us on WhatsApp</a></p>
+    <div class="contact-links">
+      <a href="mailto:danixsoft04@gmail.com">Email Us</a>
+      <a href="https://wa.me/233596742877" target="_blank">WhatsApp Us</a>
+    </div>
+  </div>
+
+  <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+  <footer>
+    <p>&copy; 2025 Danixsoft. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Scroll to top functionality
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 200) {
+        scrollTopBtn.style.display = 'block';
+      } else {
+        scrollTopBtn.style.display = 'none';
+      }
+    };
+
+    scrollTopBtn.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
